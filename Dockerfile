@@ -1,4 +1,4 @@
-FROM ubuntu:latest 
+FROM yiizh/yiizh.com
 
 ADD . /app
 
@@ -8,4 +8,4 @@ RUN cd /app; \
 chmod +777 init.sh; \ 
 ./init.sh 
 
-EXPOSE 8123
+#EXPOSE 8123
