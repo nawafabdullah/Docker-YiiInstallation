@@ -1,0 +1,10 @@
+FROM ubuntu:latest 
+
+ADD . /app
+
+ENTRYPOINT tail -f /dev/null
+
+RUN cd /app; \
+./init.sh 
+
+EXPOSE 8123
