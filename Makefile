@@ -1,6 +1,6 @@
 prepare:
 	docker build -t nawaf-yii-instalation .
-	docker run --name web-container -d nawaf-Yii-instalation
+	docker run --name web-container -d nawaf-yii-instalation -p 8000:8000
 	
 connect:
 	echo "Connecting to Server..."
